@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function range(start,end)
+{
+	if(arguments.length < 2)
+	{
+		end = start;
+		start =0;
+	}
+	var list = [];
+	for(var i = start; i <= end; i++)
+		list.push(i);
+	return list;
+}
+var value =  range(4);
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

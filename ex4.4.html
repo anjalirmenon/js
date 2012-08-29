@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function startsWith(string1, string2)
+{
+	return string1.slice(0,string2.length) == string2;
+}
+
+var value =  startsWith("pottery", "pot");
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

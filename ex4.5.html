@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function catNames(para)
+{
+	var mark;
+	mark = para.indexOf(":");
+	return para.slice(mark + 2).split(", ");
+}
+
+var value =  catNames("born 05/04/2006 (mother Lady Penelope): Red Lion, Doctor Hobbles the 3rd, Little Iroquois");
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

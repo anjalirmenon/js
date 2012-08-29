@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function extract_date(para)
+{
+	function date_number(begin, length)
+	{
+		return Number(para.slice(begin, begin + length));
+	}
+	return new Date(date_number(11,4), date_number(8,2) -1, date_number(5,2));
+}
+var value =  extract_date("died 27-04-2006: Black Leclère");
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

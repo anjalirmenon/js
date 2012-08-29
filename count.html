@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p id = "demo"></p>
+<h1>"total of first 10 numbers"</h1>
+<button onclick="myFunction()">click</button>
+</head>
+<body>
+<script>
+function myFunction()
+{
+	var total=0, count =1;
+	while (count <=10)
+	{
+		total += count;
+		count += 1;
+	}
+document.getElementById("demo").innerHTML = total;
+document.getElemntById("demo").innerHTML = count;
+}
+</script>
+</body>
+</html>

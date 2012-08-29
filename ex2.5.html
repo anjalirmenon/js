@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> click on prompt box.</p>
+<button onclick= "myFunction()">check it out</button>
+
+<p id="demo"></p>
+<script>
+function myFunction()
+{
+	var x;
+	var result= Number(prompt("What is the value of 2+2?","answer"));
+	if(result == 4)
+	{
+		x= alert("you are too good!");
+	//	document.getElementById("demo").innerHTML=x;
+	}
+	else
+	{
+		if(result == 3 || result == 5)
+		{
+			x=alert("Almost!");
+	//		document.getElementById("demo").innerHTML=x;
+		}
+		else
+		{
+			x=alert("You are seriously too bad with algebra!");
+	//		document.getElementById("demo").innerHTML=x;
+		}
+	}
+}
+</script>
+</body>
+</html>

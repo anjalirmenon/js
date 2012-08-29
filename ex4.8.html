@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function formate_date(date)
+{
+	function setformat(number)
+	{
+		if(number < 10)
+		{
+			return "0" + number;;
+		}
+		else
+			return number;
+	}
+	return setformat(date.getDate()) + "-" + setformat(date.getMonth() + 1)+"-" + date.getFullYear();
+}
+
+var value =  format_date(new Date(2000, 0, 1));
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

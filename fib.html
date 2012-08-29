@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to loop through a block of code five times.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x,a=0,b=1,i,c;
+for (i=0;i<5;i++)
+  {
+	c=a+b;
+  x="The number is " + c + "<br />";
+	a=b;
+	b=c;
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body>
+</html>

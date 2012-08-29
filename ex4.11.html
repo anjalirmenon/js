@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function range_sum(start,end)
+{
+	var total_sum = 0;
+        if(arguments.length < 2)
+        {
+                end = start;
+                start =0;
+        }
+        var list = [];
+        for(var i = start; i <= end; i++)
+                list.push(i);
+	while ( start != end)
+	{
+		total_sum + = start;
+		start = start + 1;
+	} 
+	return total_sum;	
+}
+var value = range_sum(1,10);
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

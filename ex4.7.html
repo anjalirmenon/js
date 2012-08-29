@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function between(string1,string2,string3)
+{
+	var mark,fin;
+	mark = string1.indexOf(string2) + string2.length;
+	fin = string1.indexOf(string3, mark);
+	return string1.slice(mark, fin);
+}
+
+var value =  between("bu ] boo [ bah ] gzz", "[ ", " ]");
+document.getElementById("demo").innerHTML=value;
+</script>
+</body>
+</html>
+

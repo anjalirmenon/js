@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "demo"></p>
+<script>
+function greater(x)
+{
+	return function(y)
+	{
+		return y > x;
+	};
+}
+
+var greaterNumber =  greater(9);
+document.getElementById("demo").innerHTML=greaterNumber(8);
+</script>
+</body>
+</html>
+
